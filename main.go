@@ -1,15 +1,12 @@
 package main
 
 import (
-	"Echo/controllers"
 	"Echo/routes"
 
 	"github.com/labstack/echo/v4"
 )
 
 func main() {
-	data := controllers.Connect()
-	defer data.Close()
 
 	e := echo.New()
 
